@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rishabhrajeshmishra-gif.github.io/electro-mart/sitemap.xml
