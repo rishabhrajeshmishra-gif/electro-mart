@@ -3,8 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="Bq4krT_gr0vhlIufRjgr4NEiffXTL3lP-2qI5256Kns" />
-<title>Electro Mart — Electronics Store</title>
+
+<!-- Google Search Console Verification -->
+<meta name="google-site-verification" content="Bq4krT_gr0vhlIufRjgr4NEiffXTL3lP-2qI5256Kns">
+
+<!-- SEO -->
+<title>Electro Mart | Electronics, Mobiles, Laptops & Accessories</title>
+
+<meta name="description" content="Shop electronics at Electro Mart, including smartphones, laptops, headphones, gaming gear, smartwatches, chargers and everyday tech accessories.">
+
+<meta name="robots" content="index, follow">
+<meta name="author" content="Electro Mart">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://rishabhrajeshmishra-gif.github.io/electro-mart/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Electro Mart | Electronics, Mobiles, Laptops & Accessories">
+<meta property="og:description" content="Discover smartphones, laptops, audio, gaming gear, wearables and everyday electronics at Electro Mart.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rishabhrajeshmishra-gif.github.io/electro-mart/">
+<meta property="og:site_name" content="Electro Mart">
+
+<!-- Mobile Browser Theme -->
+<meta name="theme-color" content="#0b1220">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Electro Mart",
+  "url": "https://rishabhrajeshmishra-gif.github.io/electro-mart/",
+  "description": "Electronics store featuring smartphones, laptops, audio products, gaming gear, wearables and accessories."
+}
+</script>
+
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{--bg:#f5f7fb;--card:#fff;--text:#111827;--muted:#64748b;--primary:#2563eb;--primary2:#7c3aed;--line:#e5e7eb;--dark:#0b1220}
@@ -32,90 +66,559 @@ footer{background:#0b1220;color:#cbd5e1;padding:42px 0 20px;margin-top:30px}.foo
 @media(max-width:560px){.navin{gap:10px}.logo{font-size:21px}.search{order:3;flex-basis:100%}.navin{height:auto;padding:12px 0;flex-wrap:wrap}.hero{padding-top:20px}.heroBox{padding:30px 22px}.hero h1{font-size:36px}.grid{grid-template-columns:1fr 1fr;gap:10px}.pic{height:150px;font-size:60px}.product h3{font-size:14px}.categories{gap:8px}.cat{padding:13px 5px}.cat .emoji{font-size:28px}.features{grid-template-columns:1fr}.footgrid{grid-template-columns:1fr}.deals{display:block}.deals .btn{margin-top:15px}.btn + .btn{margin-left:4px}}
 </style>
 </head>
+
 <body>
+
 <div class="top">⚡ Welcome to Electro Mart • Free delivery on orders above ₹999</div>
 
-<nav><div class="container navin">
+<nav>
+<div class="container navin">
+
   <div class="logo">Electro<span>Mart</span></div>
-  <div class="search"><input id="search" placeholder="Search phones, laptops, headphones..." oninput="renderProducts()"><button>🔍</button></div>
-  <div class="navlinks"><a href="#products">Shop</a><a href="#deals">Deals</a><button class="iconbtn" onclick="openCart()">🛒<span class="badge" id="cartCount">0</span></button></div>
-</div></nav>
+
+  <div class="search">
+    <input
+      id="search"
+      type="search"
+      aria-label="Search products"
+      placeholder="Search phones, laptops, headphones..."
+      oninput="renderProducts()">
+    <button type="button" aria-label="Search">🔍</button>
+  </div>
+
+  <div class="navlinks">
+    <a href="#products">Shop</a>
+    <a href="#deals">Deals</a>
+    <button class="iconbtn" type="button" aria-label="Open shopping cart" onclick="openCart()">
+      🛒<span class="badge" id="cartCount">0</span>
+    </button>
+  </div>
+
+</div>
+</nav>
 
 <main>
-<section class="hero"><div class="container"><div class="heroBox">
-  <div><div class="tag" style="color:#93c5fd">NEXT-GEN ELECTRONICS</div><h1>Upgrade your world with smarter tech.</h1><p>Discover smartphones, laptops, audio, gaming gear and everyday electronics — all in one place.</p><a class="btn primary" href="#products">Shop Now →</a><a class="btn" href="#categories">Explore Categories</a></div>
-  <div class="heroArt">💻<br><span style="font-size:70px">🎧 📱</span></div>
-</div></div></section>
 
-<section class="section" id="categories"><div class="container"><div class="sectionHead"><h2>Shop by Category</h2><span class="muted">Find your favourite tech</span></div>
+<section class="hero" aria-labelledby="hero-title">
+<div class="container">
+<div class="heroBox">
+
+  <div>
+    <div class="tag" style="color:#93c5fd">NEXT-GEN ELECTRONICS</div>
+
+    <h1 id="hero-title">
+      Electro Mart – Electronics, Mobiles, Laptops & More
+    </h1>
+
+    <p>
+      Shop smartphones, laptops, headphones, gaming gear,
+      smartwatches and everyday electronics at Electro Mart.
+    </p>
+
+    <a class="btn primary" href="#products">Shop Now →</a>
+    <a class="btn" href="#categories">Explore Categories</a>
+  </div>
+
+  <div class="heroArt" aria-hidden="true">
+    💻<br><span style="font-size:70px">🎧 📱</span>
+  </div>
+
+</div>
+</div>
+</section>
+
+
+<section class="section" id="categories" aria-labelledby="categories-title">
+<div class="container">
+
+<div class="sectionHead">
+  <h2 id="categories-title">Shop Electronics by Category</h2>
+  <span class="muted">Find your favourite tech</span>
+</div>
+
 <div class="categories">
-<div class="cat" onclick="filterCat('Smartphones')"><div class="emoji">📱</div><b>Smartphones</b></div>
-<div class="cat" onclick="filterCat('Laptops')"><div class="emoji">💻</div><b>Laptops</b></div>
-<div class="cat" onclick="filterCat('Audio')"><div class="emoji">🎧</div><b>Audio</b></div>
-<div class="cat" onclick="filterCat('Gaming')"><div class="emoji">🎮</div><b>Gaming</b></div>
-<div class="cat" onclick="filterCat('Wearables')"><div class="emoji">⌚</div><b>Wearables</b></div>
-<div class="cat" onclick="filterCat('Accessories')"><div class="emoji">🔌</div><b>Accessories</b></div>
-</div></div></section>
 
-<section class="section" id="products"><div class="container">
-<div class="sectionHead"><div><h2>Featured Products</h2><span class="muted" id="resultText">Top picks for you</span></div>
-<div class="toolbar"><select class="select" id="sort" onchange="renderProducts()"><option value="featured">Sort: Featured</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option></select><button class="select" onclick="filterCat('All')">All Products</button></div></div>
+<div class="cat" onclick="filterCat('Smartphones')">
+  <div class="emoji">📱</div>
+  <b>Smartphones</b>
+</div>
+
+<div class="cat" onclick="filterCat('Laptops')">
+  <div class="emoji">💻</div>
+  <b>Laptops</b>
+</div>
+
+<div class="cat" onclick="filterCat('Audio')">
+  <div class="emoji">🎧</div>
+  <b>Audio</b>
+</div>
+
+<div class="cat" onclick="filterCat('Gaming')">
+  <div class="emoji">🎮</div>
+  <b>Gaming</b>
+</div>
+
+<div class="cat" onclick="filterCat('Wearables')">
+  <div class="emoji">⌚</div>
+  <b>Wearables</b>
+</div>
+
+<div class="cat" onclick="filterCat('Accessories')">
+  <div class="emoji">🔌</div>
+  <b>Accessories</b>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section class="section" id="products" aria-labelledby="products-title">
+<div class="container">
+
+<div class="sectionHead">
+
+<div>
+  <h2 id="products-title">Featured Electronics & Tech Products</h2>
+  <span class="muted" id="resultText">Top picks for you</span>
+</div>
+
+<div class="toolbar">
+
+<select class="select" id="sort" onchange="renderProducts()" aria-label="Sort products">
+  <option value="featured">Sort: Featured</option>
+  <option value="low">Price: Low to High</option>
+  <option value="high">Price: High to Low</option>
+</select>
+
+<button class="select" type="button" onclick="filterCat('All')">
+  All Products
+</button>
+
+</div>
+</div>
+
 <div class="grid" id="productGrid"></div>
-</div></section>
 
-<section class="section" id="deals"><div class="container"><div class="deals"><div><strong>🔥 Mega Tech Deals</strong><p>Save more on selected electronics this week. Use code <span class="dealCode">ELECTRO10</span></p></div><button class="btn primary" onclick="filterDeals()">View Deals</button></div></div></section>
+</div>
+</section>
 
-<section class="section"><div class="container"><div class="features">
-<div class="feature">🚚 <b>Fast Delivery</b><span>Quick delivery across India</span></div>
-<div class="feature">🔒 <b>Secure Payments</b><span>Safe & trusted checkout</span></div>
-<div class="feature">↩️ <b>Easy Returns</b><span>Simple return experience</span></div>
-<div class="feature">🎧 <b>Tech Support</b><span>We're here when you need us</span></div>
-</div></div></section>
+
+<section class="section" id="deals" aria-labelledby="deals-title">
+<div class="container">
+
+<div class="deals">
+
+<div>
+  <strong id="deals-title">🔥 Mega Tech Deals</strong>
+  <p>
+    Save more on selected electronics this week.
+    Use code <span class="dealCode">ELECTRO10</span>
+  </p>
+</div>
+
+<button class="btn primary" type="button" onclick="filterDeals()">
+  View Deals
+</button>
+
+</div>
+
+</div>
+</section>
+
+
+<section class="section" aria-label="Electro Mart benefits">
+<div class="container">
+
+<div class="features">
+
+<div class="feature">
+  🚚 <b>Fast Delivery</b>
+  <span>Quick delivery across India</span>
+</div>
+
+<div class="feature">
+  🔒 <b>Secure Payments</b>
+  <span>Safe & trusted checkout</span>
+</div>
+
+<div class="feature">
+  ↩️ <b>Easy Returns</b>
+  <span>Simple return experience</span>
+</div>
+
+<div class="feature">
+  🎧 <b>Tech Support</b>
+  <span>We're here when you need us</span>
+</div>
+
+</div>
+</div>
+</section>
+
 </main>
 
-<footer><div class="container"><div class="footgrid">
-<div class="foot"><div class="footerlogo">Electro<span>Mart</span></div><p>Your one-stop destination for modern electronics and accessories.</p><p>📍 Mumbai, Maharashtra, India</p><p>✉️ support@electromart.example</p></div>
-<div class="foot"><h4>Shop</h4><a href="#products">Smartphones</a><a href="#products">Laptops</a><a href="#products">Audio</a><a href="#products">Gaming</a></div>
-<div class="foot"><h4>Help</h4><a href="#">Contact Us</a><a href="#">Shipping</a><a href="#">Returns</a><a href="#">FAQs</a></div>
-<div class="foot"><h4>Follow</h4><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">YouTube</a></div>
-</div><div class="copy">© 2026 Electro Mart. Demo storefront — connect your real payment, inventory and backend before launch.</div></div></footer>
 
-<div class="modal" id="cartModal"><div class="modalbox"><button class="close" onclick="closeCart()">×</button><h2>🛒 Your Cart</h2><div id="cartItems"></div><div class="total" id="cartTotal">Total: ₹0</div><button class="btn primary" style="width:100%" onclick="checkout()">Proceed to Checkout</button></div></div>
+<footer>
+
+<div class="container">
+
+<div class="footgrid">
+
+<div class="foot">
+
+  <div class="footerlogo">
+    Electro<span>Mart</span>
+  </div>
+
+  <p>
+    Your one-stop destination for modern electronics and accessories.
+  </p>
+
+  <p>
+    📍 Mumbai, Maharashtra, India
+  </p>
+
+  <p>
+    ✉️ support@electromart.example
+  </p>
+
+</div>
+
+
+<div class="foot">
+
+  <h4>Shop</h4>
+
+  <a href="#products">Smartphones</a>
+  <a href="#products">Laptops</a>
+  <a href="#products">Audio</a>
+  <a href="#products">Gaming</a>
+
+</div>
+
+
+<div class="foot">
+
+  <h4>Help</h4>
+
+  <a href="#products">Contact Us</a>
+  <a href="#products">Shipping</a>
+  <a href="#products">Returns</a>
+  <a href="#products">FAQs</a>
+
+</div>
+
+
+<div class="foot">
+
+  <h4>Follow</h4>
+
+  <a href="#products">Instagram</a>
+  <a href="#products">Facebook</a>
+  <a href="#products">YouTube</a>
+
+</div>
+
+</div>
+
+
+<div class="copy">
+  © 2026 Electro Mart. Demo storefront — connect your real payment,
+  inventory and backend before launch.
+</div>
+
+</div>
+</footer>
+
+
+<div class="modal" id="cartModal" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+
+<div class="modalbox">
+
+<button class="close" type="button" aria-label="Close cart" onclick="closeCart()">×</button>
+
+<h2 id="cart-title">🛒 Your Cart</h2>
+
+<div id="cartItems"></div>
+
+<div class="total" id="cartTotal">
+  Total: ₹0
+</div>
+
+<button
+  class="btn primary"
+  type="button"
+  style="width:100%"
+  onclick="checkout()">
+  Proceed to Checkout
+</button>
+
+</div>
+</div>
+
 
 <script>
+
 const products=[
+
 {id:1,name:"Nova X Pro Smartphone",cat:"Smartphones",price:29999,old:34999,emoji:"📱",rating:4.8,deal:true},
+
 {id:2,name:"UltraBook Air 14",cat:"Laptops",price:58999,old:64999,emoji:"💻",rating:4.7,deal:true},
+
 {id:3,name:"BassMax Wireless Headphones",cat:"Audio",price:2499,old:3999,emoji:"🎧",rating:4.6,deal:true},
+
 {id:4,name:"GamePro Wireless Controller",cat:"Gaming",price:3499,old:4499,emoji:"🎮",rating:4.5,deal:true},
+
 {id:5,name:"FitTrack Smart Watch",cat:"Wearables",price:2999,old:4999,emoji:"⌚",rating:4.4,deal:false},
+
 {id:6,name:"65W Fast Charger",cat:"Accessories",price:1299,old:1799,emoji:"🔌",rating:4.6,deal:false},
+
 {id:7,name:"SoundPods Pro TWS",cat:"Audio",price:1799,old:2999,emoji:"🎵",rating:4.5,deal:true},
+
 {id:8,name:"4K Smart LED TV",cat:"Accessories",price:32999,old:39999,emoji:"📺",rating:4.7,deal:true}
+
 ];
+
+
 let category="All",cart=[];
-function money(n){return "₹"+n.toLocaleString("en-IN")}
-function filterCat(c){category=c;document.getElementById("products").scrollIntoView({behavior:"smooth"});renderProducts()}
-function filterDeals(){category="Deals";document.getElementById("products").scrollIntoView({behavior:"smooth"});renderProducts()}
-function renderProducts(){
- let q=document.getElementById("search").value.toLowerCase(), sort=document.getElementById("sort").value;
- let list=products.filter(p=>(category==="All"||p.cat===category||category==="Deals"&&p.deal)&&(`${p.name} ${p.cat}`.toLowerCase().includes(q)));
- if(sort==="low")list.sort((a,b)=>a.price-b.price); if(sort==="high")list.sort((a,b)=>b.price-a.price);
- document.getElementById("resultText").textContent=`${list.length} product${list.length!==1?"s":""} found`;
- document.getElementById("productGrid").innerHTML=list.length?list.map(p=>`
- <article class="product"><button class="heart" onclick="this.classList.toggle('active');this.textContent=this.classList.contains('active')?'♥':'♡'">♡</button>
- <div class="pic">${p.emoji}</div><div class="info"><span class="tag">${p.cat}</span><h3>${p.name}</h3><div class="stars">★★★★★ <span style="color:#64748b">${p.rating}</span></div>
- <div class="price">${money(p.price)} <span class="old">${money(p.old)}</span></div><button class="add" onclick="addCart(${p.id})">Add to Cart</button></div></article>`).join(""):"<div class='empty' style='grid-column:1/-1'>No products found. Try another search.</div>";
+
+
+function money(n){
+  return "₹"+n.toLocaleString("en-IN");
 }
-function addCart(id){let p=products.find(x=>x.id===id), item=cart.find(x=>x.id===id);item?item.qty++:cart.push({...p,qty:1});updateCart();alert(p.name+" added to cart!")}
-function updateCart(){document.getElementById("cartCount").textContent=cart.reduce((s,x)=>s+x.qty,0)}
-function openCart(){document.getElementById("cartModal").classList.add("show");renderCart()}
-function closeCart(){document.getElementById("cartModal").classList.remove("show")}
-function renderCart(){let el=document.getElementById("cartItems"); if(!cart.length){el.innerHTML="<div class='empty'>Your cart is empty.</div>";document.getElementById("cartTotal").textContent="Total: ₹0";return}
-el.innerHTML=cart.map(x=>`<div class="cartrow"><span>${x.emoji} ${x.name} × ${x.qty}</span><b>${money(x.price*x.qty)}</b></div>`).join("");
-document.getElementById("cartTotal").textContent="Total: "+money(cart.reduce((s,x)=>s+x.price*x.qty,0))}
-function checkout(){if(!cart.length)return alert("Your cart is empty.");alert("Demo checkout: connect a real payment gateway and backend to accept orders.");}
-renderProducts();updateCart();
+
+
+function filterCat(c){
+
+  category=c;
+
+  document
+    .getElementById("products")
+    .scrollIntoView({behavior:"smooth"});
+
+  renderProducts();
+
+}
+
+
+function filterDeals(){
+
+  category="Deals";
+
+  document
+    .getElementById("products")
+    .scrollIntoView({behavior:"smooth"});
+
+  renderProducts();
+
+}
+
+
+function renderProducts(){
+
+  let q=document
+    .getElementById("search")
+    .value
+    .toLowerCase();
+
+  let sort=document
+    .getElementById("sort")
+    .value;
+
+
+  let list=products.filter(p=>
+    (
+      category==="All" ||
+      p.cat===category ||
+      category==="Deals" && p.deal
+    )
+    &&
+    (
+      `${p.name} ${p.cat}`
+      .toLowerCase()
+      .includes(q)
+    )
+  );
+
+
+  if(sort==="low")
+    list.sort((a,b)=>a.price-b.price);
+
+  if(sort==="high")
+    list.sort((a,b)=>b.price-a.price);
+
+
+  document.getElementById("resultText").textContent=
+    `${list.length} product${list.length!==1?"s":""} found`;
+
+
+  document.getElementById("productGrid").innerHTML=
+
+    list.length ?
+
+    list.map(p=>`
+
+      <article class="product">
+
+        <button
+          class="heart"
+          type="button"
+          aria-label="Add ${p.name} to wishlist"
+          onclick="this.classList.toggle('active');this.textContent=this.classList.contains('active')?'♥':'♡'">
+          ♡
+        </button>
+
+        <div class="pic" role="img" aria-label="${p.name}">
+          ${p.emoji}
+        </div>
+
+        <div class="info">
+
+          <span class="tag">${p.cat}</span>
+
+          <h3>${p.name}</h3>
+
+          <div class="stars">
+            ★★★★★
+            <span style="color:#64748b">${p.rating}</span>
+          </div>
+
+          <div class="price">
+            ${money(p.price)}
+            <span class="old">${money(p.old)}</span>
+          </div>
+
+          <button
+            class="add"
+            type="button"
+            onclick="addCart(${p.id})">
+            Add to Cart
+          </button>
+
+        </div>
+
+      </article>
+
+    `).join("")
+
+    :
+
+    "<div class='empty' style='grid-column:1/-1'>No products found. Try another search.</div>";
+
+}
+
+
+function addCart(id){
+
+  let p=products.find(x=>x.id===id);
+
+  let item=cart.find(x=>x.id===id);
+
+  item
+    ? item.qty++
+    : cart.push({...p,qty:1});
+
+  updateCart();
+
+  alert(p.name+" added to cart!");
+
+}
+
+
+function updateCart(){
+
+  document.getElementById("cartCount").textContent=
+    cart.reduce((s,x)=>s+x.qty,0);
+
+}
+
+
+function openCart(){
+
+  document
+    .getElementById("cartModal")
+    .classList.add("show");
+
+  renderCart();
+
+}
+
+
+function closeCart(){
+
+  document
+    .getElementById("cartModal")
+    .classList.remove("show");
+
+}
+
+
+function renderCart(){
+
+  let el=document.getElementById("cartItems");
+
+
+  if(!cart.length){
+
+    el.innerHTML=
+      "<div class='empty'>Your cart is empty.</div>";
+
+    document.getElementById("cartTotal").textContent=
+      "Total: ₹0";
+
+    return;
+
+  }
+
+
+  el.innerHTML=
+
+    cart.map(x=>`
+
+      <div class="cartrow">
+
+        <span>
+          ${x.emoji} ${x.name} × ${x.qty}
+        </span>
+
+        <b>
+          ${money(x.price*x.qty)}
+        </b>
+
+      </div>
+
+    `).join("");
+
+
+  document.getElementById("cartTotal").textContent=
+    "Total: "+
+    money(
+      cart.reduce(
+        (s,x)=>s+x.price*x.qty,
+        0
+      )
+    );
+
+}
+
+
+function checkout(){
+
+  if(!cart.length)
+    return alert("Your cart is empty.");
+
+  alert(
+    "Demo checkout: connect a real payment gateway and backend to accept orders."
+  );
+
+}
+
+
+renderProducts();
+updateCart();
+
 </script>
+
 </body>
 </html>
